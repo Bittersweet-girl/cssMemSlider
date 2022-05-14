@@ -109,6 +109,7 @@ h1{
   z-index: 333;
   display: flex;
   flex-wrap: nowrap;
+  gap: 0.5rem;
 }
 .slider-menu__label{
   cursor: pointer;
@@ -122,6 +123,27 @@ h1{
   background: #ccc;
   margin: 0 1rem;
 }
-.slider-menu__dot:hover {
+.slider-menu__label:hover .slider-menu__dot {
   background: red;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.slider-menu__label:active .slider-menu__dot {
+  background: #444;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+input:checked~.slider-menu__label>.slider-menu__dot {
+  background: #444;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+#slide_1:checked~.slider-menu label:nth-child(1)>.slider-menu__dot,
+#slide_2:checked~.slider-menu label:nth-child(2)>.slider-menu__dot,
+#slide_3:checked~.slider-menu label:nth-child(3)>.slider-menu__dot,
+#slide_4:checked~.slider-menu label:nth-child(4)>.slider-menu__dot,
+#slide_5:checked~.slider-menu label:nth-child(5)>.slider-menu__dot,
+#slide_6:checked~.slider-menu label:nth-child(6)>.slider-menu__dot,
+#slide_7:checked~.slider-menu label:nth-child(7)>.slider-menu__dot {
+  background: #444;
 }
