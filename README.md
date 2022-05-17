@@ -1,0 +1,1 @@
+https://bittersweet-girl.github.io/cssMemSlider/cssMemSlider/
