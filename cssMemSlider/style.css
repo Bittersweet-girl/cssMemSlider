@@ -158,9 +158,18 @@ h1{
   .wrapper{
     width: 50rem;
   }
+  .slider-footer{
+    flex-direction: column;
+  }
   .slide{
     width: 47rem;
     height: 26em;
+  }
+  .slider-title{
+    width: 100%;
+  }
+  .slider-menu{
+    order: -1;
   }
   .slider-menu__label{
     width: 2rem;
